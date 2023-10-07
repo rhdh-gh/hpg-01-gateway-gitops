@@ -1,0 +1,15 @@
+app:
+  name: hpg-01-poi-gateway-app
+  namespace: hpg-01
+  cluster: .apps.rosa-x4jc7.l07n.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-gh/hpg-01-gateway
+  org: rhdh-gh
+  name: hpg-01-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: hpg-01/poi-gateway-app
+  tag: latest
